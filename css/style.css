@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+} 
+/*set up app background-image & font-family & image size
+    (exception: when we use desktop we will change the img ratio) */
+body{
+    font-family: Microsoft JhengHei;
+}
+img {
+    width: 60%;
+    height: auto;
+    margin-top: 2em;
+}
+@media only screen and (min-width: 800px) {
+    img{
+        width: 25%;
+        height: auto;
+        margin-top: 2em;
+    } 
+    #btn0:hover,#btn1:hover,#btn2:hover,#btn3:hover {
+        background-color: #555555;
+        color: white;
+    }
+    
+}
+/*initial setup*/
+.start{
+    text-align: center;
+    border: 5px solid;
+    padding-bottom: 2em;
+    border-color: azure;
+}
+.text-content{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+#start_btn{
+    width:50%;
+    background-color: white;
+    height: 4em;
+    font-size: 1em;
+    color: #black;
+    border: 1.5px solid #1d3c6a;
+    border-radius: 30px;
+    padding: 0.8em 1.4em;
+    margin: 0.8em 0em 0.8em 0em;
+    cursor:pointer;
+    
+}
+#start_btn:hover{
+   background-color: #555555;
+   color: white;
+}
+/*when we start quiz , the qusestion will change to its css*/
+.grid h1{
+    font-size: 1.8em;
+    text-align: center;
+    color: black;
+    padding: 1em 0.5em;
+}
+.buttons{
+    text-align: center;
+}
+#btn0,#btn1,#btn2,#btn3{
+    
+    width:95%;
+    background-color: white;
+    height: 4em;
+    font-size: 1em;
+    color: #black;
+    border: 1px solid #1d3c6a;
+    border-radius: 50px;
+    margin: 0em 0em 1.2em 0em;
+    padding: 0.8em 1.4em;
+    
+}
+/*when we start result , the result will change to its css*/
+.result h1{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: -1.2em;
+    color: black;
+}
+.result{
+    text-align: center;
+}
+.explain_text{
+    margin-top: 1em;
+    font-size: 1.2em;
+    border: 2px solid;
+    border-color: black;
+}
+
