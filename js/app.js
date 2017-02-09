@@ -31,6 +31,13 @@ function showResult(){
     var gameOverHtml="<div class='result'>";
     var result=-1;
     var resultIndex;
+    var random_num=Math.floor((Math.random()*999+1));
+    var id_string=random_num.toString();
+    if(random_num<100&&random_num>=10){
+        id_string="0"+id_string;
+    }else if(random_num<10){
+        id_string="00"+id_string;
+    }
     for(var i=0;i<4;i++){
         if(quiz.score[i]>result){
             //get the most score to be output
@@ -60,6 +67,8 @@ function showResult(){
             gameOverHtml+="<h1>行政助理（AA）</h1><img id='image'src='img/AA.png'><div class='explain_text'><p>資料彙整處理分析<br>職場應對進退技巧<br>文案發想與撰寫<br>業務資訊整合管理</p></div>";
             break;
     }
+    gameOverHtml+="<h4>您的取件編號："+id_string+"</h4>"
+    gameOverHtml+="<h4>請於講座後至後台領取紀念品</h4>"
     gameOverHtml+="</div>";
     var result=document.getElementById("quiz");
     result.innerHTML=gameOverHtml;

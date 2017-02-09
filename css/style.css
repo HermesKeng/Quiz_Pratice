@@ -78,8 +78,14 @@ img {
 .result h1{
     font-size: 2em;
     text-align: center;
+    margin-top: -0.5em;
     margin-bottom: -1.2em;
     color: black;
+}
+.result img{
+    width: 55%;
+    height: auto;
+    margin-top: 1.5em;
 }
 .result{
     text-align: center;
